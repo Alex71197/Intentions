@@ -19,17 +19,14 @@ class GoalsVC: UIViewController {
     }
 
     @IBAction func addGoalBtnPressed(_ sender: Any) {
-        
+        let addGoalVC = storyboard?.instantiateViewController(withIdentifier: "AddGoalVC")
+        presentDetail(addGoalVC!)
     }
     
     @IBAction func menuBtnPressed(_ sender: Any) {
         
     }
     
-    
-}
-
-extension GoalsVC: UITableViewDelegate, UITableViewDataSource {
     
 }
 

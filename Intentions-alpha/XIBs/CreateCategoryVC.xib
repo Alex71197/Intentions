@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-DemiBold</string>
+            <string>AvenirNext-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateCategoryVC" customModule="Intentions_alpha" customModuleProvider="target">
+            <connections>
+                <outlet property="bgView" destination="UMe-WU-mRR" id="idD-7S-9sp"/>
+                <outlet property="categoryImg" destination="2Ad-0f-PAz" id="10b-Qa-EEw"/>
+                <outlet property="categoryNameTxt" destination="ytS-PF-wSP" id="1Wd-oq-SrF"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UMe-WU-mRR">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bxZ-3b-Xwt">
+                    <rect key="frame" x="8" y="160" width="359" height="346"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXz-61-sg9">
+                            <rect key="frame" x="103.5" y="30" width="151.5" height="27.5"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                            <color key="textColor" red="0.8822358383072747" green="0.48568029536141288" blue="0.58864682912826538" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Ad-0f-PAz" customClass="CircleImage" customModule="Intentions_alpha" customModuleProvider="target">
+                            <rect key="frame" x="129" y="87.5" width="100" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="B8C-WP-463"/>
+                                <constraint firstAttribute="height" constant="100" id="qQy-B1-dHL"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qwl-xv-QBz">
+                            <rect key="frame" x="119" y="77" width="120" height="120"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="120" id="BRQ-HT-B8P"/>
+                                <constraint firstAttribute="height" constant="120" id="ffT-9D-B3B"/>
+                            </constraints>
+                            <connections>
+                                <action selector="chooseImgBtnPressed:" destination="-1" eventType="touchUpInside" id="A8D-Dq-Ucy"/>
+                            </connections>
+                        </button>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Bge-db-vHM">
+                            <rect key="frame" x="54" y="222" width="250" height="30"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Category Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ytS-PF-wSP">
+                                    <rect key="frame" x="0.0" y="0.0" width="250" height="29"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="250" id="wa1-K1-UDg"/>
+                                    </constraints>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SS3-rL-k8X">
+                                    <rect key="frame" x="0.0" y="29" width="250" height="1"/>
+                                    <color key="backgroundColor" red="0.88223583829999996" green="0.48568029540000002" blue="0.58864682909999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="250" id="Zp4-aG-A94"/>
+                                        <constraint firstAttribute="height" constant="1" id="roe-Fn-KSa"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="h1J-Iv-4lh"/>
+                                <constraint firstAttribute="width" constant="250" id="ndb-zi-Js0"/>
+                            </constraints>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fcx-IW-1BC" customClass="CustomButton" customModule="Intentions_alpha" customModuleProvider="target">
+                            <rect key="frame" x="54" y="276" width="250" height="50"/>
+                            <color key="backgroundColor" red="0.8822358383072747" green="0.48568029536141288" blue="0.58864682912826538" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="8q3-vI-ww0"/>
+                                <constraint firstAttribute="width" constant="250" id="SCq-mJ-FMU"/>
+                            </constraints>
+                            <state key="normal" title="Create Category">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="createCategoryBtnPressed:" destination="-1" eventType="touchUpInside" id="d6G-Vc-uge"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhY-oZ-vT6" customClass="CustomButton" customModule="Intentions_alpha" customModuleProvider="target">
+                            <rect key="frame" x="321" y="8" width="30" height="30"/>
+                            <color key="backgroundColor" red="0.88223583829999996" green="0.48568029540000002" blue="0.58864682909999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="oEU-qv-D07"/>
+                                <constraint firstAttribute="width" constant="30" id="tMl-u1-Gcl"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                            <state key="normal" title="X">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="closeBtnPressed:" destination="-1" eventType="touchUpInside" id="y2m-e7-FQM"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="hXz-61-sg9" firstAttribute="top" secondItem="bxZ-3b-Xwt" secondAttribute="top" constant="30" id="47j-OL-ZLJ"/>
+                        <constraint firstItem="dhY-oZ-vT6" firstAttribute="top" secondItem="bxZ-3b-Xwt" secondAttribute="top" constant="8" id="Arq-3e-h5b"/>
+                        <constraint firstItem="Fcx-IW-1BC" firstAttribute="centerX" secondItem="bxZ-3b-Xwt" secondAttribute="centerX" id="HUp-Z0-OMX"/>
+                        <constraint firstItem="Qwl-xv-QBz" firstAttribute="centerX" secondItem="bxZ-3b-Xwt" secondAttribute="centerX" id="MAg-z4-EOA"/>
+                        <constraint firstItem="2Ad-0f-PAz" firstAttribute="top" secondItem="hXz-61-sg9" secondAttribute="bottom" constant="30" id="PC8-wp-AKJ"/>
+                        <constraint firstAttribute="bottom" secondItem="Fcx-IW-1BC" secondAttribute="bottom" constant="20" id="R0y-9h-6of"/>
+                        <constraint firstItem="Qwl-xv-QBz" firstAttribute="top" secondItem="hXz-61-sg9" secondAttribute="bottom" constant="19.5" id="Rm4-CF-daf"/>
+                        <constraint firstItem="hXz-61-sg9" firstAttribute="centerX" secondItem="bxZ-3b-Xwt" secondAttribute="centerX" id="bdG-QK-wAd"/>
+                        <constraint firstAttribute="trailing" secondItem="dhY-oZ-vT6" secondAttribute="trailing" constant="8" id="cV7-Sz-kxF"/>
+                        <constraint firstItem="Bge-db-vHM" firstAttribute="top" secondItem="Qwl-xv-QBz" secondAttribute="bottom" constant="25" id="eDX-7x-jRU"/>
+                        <constraint firstItem="2Ad-0f-PAz" firstAttribute="centerX" secondItem="bxZ-3b-Xwt" secondAttribute="centerX" id="nLp-o6-bW9"/>
+                        <constraint firstItem="Bge-db-vHM" firstAttribute="centerX" secondItem="bxZ-3b-Xwt" secondAttribute="centerX" id="rNL-en-hR7"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="UMe-WU-mRR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1wV-Ja-nC0"/>
+                <constraint firstAttribute="bottom" secondItem="UMe-WU-mRR" secondAttribute="bottom" id="1zu-fk-W1R"/>
+                <constraint firstItem="bxZ-3b-Xwt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="7CA-cW-Tj4"/>
+                <constraint firstItem="UMe-WU-mRR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="JmG-kN-oD6"/>
+                <constraint firstItem="bxZ-3b-Xwt" firstAttribute="centerY" secondItem="UMe-WU-mRR" secondAttribute="centerY" id="MLJ-PM-rkq"/>
+                <constraint firstAttribute="trailing" secondItem="UMe-WU-mRR" secondAttribute="trailing" id="XOh-Wl-JKb"/>
+                <constraint firstItem="bxZ-3b-Xwt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="160" id="k4k-XE-BKn"/>
+                <constraint firstItem="bxZ-3b-Xwt" firstAttribute="centerX" secondItem="UMe-WU-mRR" secondAttribute="centerX" id="pcj-U8-C82"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

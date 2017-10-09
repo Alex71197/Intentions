@@ -16,6 +16,14 @@
 		FAFA7E851F8AEC5E008E1A78 /* AddGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA7E841F8AEC5E008E1A78 /* AddGoalVC.swift */; };
 		FAFA7E871F8AEC7A008E1A78 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA7E861F8AEC7A008E1A78 /* LoginVC.swift */; };
 		FAFA7E891F8AECA8008E1A78 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA7E881F8AECA8008E1A78 /* RegisterVC.swift */; };
+		FAFA7E8B1F8B06D5008E1A78 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA7E8A1F8B06D5008E1A78 /* DataService.swift */; };
+		FAFA7E8F1F8B0AC4008E1A78 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAFA7E8E1F8B0AC4008E1A78 /* GoogleService-Info.plist */; };
+		FAFA7E911F8B15EC008E1A78 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA7E901F8B15EC008E1A78 /* AuthService.swift */; };
+		FAFA7E931F8B2AEE008E1A78 /* UIViewControllerEXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA7E921F8B2AEE008E1A78 /* UIViewControllerEXT.swift */; };
+		FAFA7E951F8B3019008E1A78 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA7E941F8B3019008E1A78 /* CustomButton.swift */; };
+		FAFA7E981F8B3824008E1A78 /* CreateCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA7E961F8B3824008E1A78 /* CreateCategoryVC.swift */; };
+		FAFA7E991F8B3824008E1A78 /* CreateCategoryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAFA7E971F8B3824008E1A78 /* CreateCategoryVC.xib */; };
+		FAFA7E9B1F8B3B2C008E1A78 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA7E9A1F8B3B2C008E1A78 /* CircleImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,11 +36,18 @@
 		FAFA7E701F8AE92A008E1A78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAFA7E721F8AE92A008E1A78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAFA7E751F8AE92A008E1A78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		FAFA7E771F8AE92A008E1A78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FAFA7E7D1F8AEB2F008E1A78 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FAFA7E841F8AEC5E008E1A78 /* AddGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalVC.swift; sourceTree = "<group>"; };
 		FAFA7E861F8AEC7A008E1A78 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		FAFA7E881F8AECA8008E1A78 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		FAFA7E8A1F8B06D5008E1A78 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		FAFA7E8D1F8B0A90008E1A78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAFA7E8E1F8B0AC4008E1A78 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FAFA7E901F8B15EC008E1A78 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		FAFA7E921F8B2AEE008E1A78 /* UIViewControllerEXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerEXT.swift; sourceTree = "<group>"; };
+		FAFA7E941F8B3019008E1A78 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		FAFA7E961F8B3824008E1A78 /* CreateCategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCategoryVC.swift; sourceTree = "<group>"; };
+		FAFA7E971F8B3824008E1A78 /* CreateCategoryVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateCategoryVC.xib; sourceTree = "<group>"; };
+		FAFA7E9A1F8B3B2C008E1A78 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +110,8 @@
 				FAFA7E6F1F8AE92A008E1A78 /* Main.storyboard */,
 				FAFA7E721F8AE92A008E1A78 /* Assets.xcassets */,
 				FAFA7E741F8AE92A008E1A78 /* LaunchScreen.storyboard */,
-				FAFA7E7D1F8AEB2F008E1A78 /* GoogleService-Info.plist */,
-				FAFA7E771F8AE92A008E1A78 /* Info.plist */,
+				FAFA7E8E1F8B0AC4008E1A78 /* GoogleService-Info.plist */,
+				FAFA7E8D1F8B0A90008E1A78 /* Info.plist */,
 			);
 			path = "Intentions-alpha";
 			sourceTree = "<group>";
@@ -108,6 +123,7 @@
 				FAFA7E841F8AEC5E008E1A78 /* AddGoalVC.swift */,
 				FAFA7E861F8AEC7A008E1A78 /* LoginVC.swift */,
 				FAFA7E881F8AECA8008E1A78 /* RegisterVC.swift */,
+				FAFA7E961F8B3824008E1A78 /* CreateCategoryVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -115,6 +131,8 @@
 		FAFA7E7F1F8AEBFC008E1A78 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FAFA7E941F8B3019008E1A78 /* CustomButton.swift */,
+				FAFA7E9A1F8B3B2C008E1A78 /* CircleImage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -129,6 +147,7 @@
 		FAFA7E811F8AEC07008E1A78 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FAFA7E921F8B2AEE008E1A78 /* UIViewControllerEXT.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -136,6 +155,8 @@
 		FAFA7E821F8AEC0F008E1A78 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				FAFA7E8A1F8B06D5008E1A78 /* DataService.swift */,
+				FAFA7E901F8B15EC008E1A78 /* AuthService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -143,6 +164,7 @@
 		FAFA7E831F8AEC14008E1A78 /* XIBs */ = {
 			isa = PBXGroup;
 			children = (
+				FAFA7E971F8B3824008E1A78 /* CreateCategoryVC.xib */,
 			);
 			path = XIBs;
 			sourceTree = "<group>";
@@ -210,8 +232,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAFA7E761F8AE92A008E1A78 /* LaunchScreen.storyboard in Resources */,
+				FAFA7E8F1F8B0AC4008E1A78 /* GoogleService-Info.plist in Resources */,
 				FAFA7E731F8AE92A008E1A78 /* Assets.xcassets in Resources */,
 				FAFA7E711F8AE92A008E1A78 /* Main.storyboard in Resources */,
+				FAFA7E991F8B3824008E1A78 /* CreateCategoryVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,9 +296,15 @@
 			files = (
 				FAFA7E851F8AEC5E008E1A78 /* AddGoalVC.swift in Sources */,
 				FAFA7E6E1F8AE92A008E1A78 /* GoalsVC.swift in Sources */,
+				FAFA7E981F8B3824008E1A78 /* CreateCategoryVC.swift in Sources */,
+				FAFA7E951F8B3019008E1A78 /* CustomButton.swift in Sources */,
+				FAFA7E931F8B2AEE008E1A78 /* UIViewControllerEXT.swift in Sources */,
 				FAFA7E871F8AEC7A008E1A78 /* LoginVC.swift in Sources */,
+				FAFA7E8B1F8B06D5008E1A78 /* DataService.swift in Sources */,
 				FAFA7E6C1F8AE92A008E1A78 /* AppDelegate.swift in Sources */,
+				FAFA7E9B1F8B3B2C008E1A78 /* CircleImage.swift in Sources */,
 				FAFA7E891F8AECA8008E1A78 /* RegisterVC.swift in Sources */,
+				FAFA7E911F8B15EC008E1A78 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

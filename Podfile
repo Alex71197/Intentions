@@ -10,5 +10,8 @@ target 'Intentions-alpha' do
   # Pods for Intentions-alpha
   pod 'RealmSwift'
   pod 'Firebase'
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
   
 end
