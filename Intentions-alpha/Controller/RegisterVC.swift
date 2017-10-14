@@ -39,7 +39,7 @@ class RegisterVC: UIViewController {
     
     @IBAction func loginBtnPressed(_ sender: Any) {
         let loginVC = storyboard?.instantiateViewController(withIdentifier: "LoginVC")
-        present(loginVC!, animated: true, completion: nil)
+        presentFade(loginVC!)
     }
     
 }
