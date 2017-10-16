@@ -28,7 +28,7 @@ class GoalsVC: UIViewController {
         swipeLeft.direction = UISwipeGestureRecognizerDirection.left
         self.view.addGestureRecognizer(swipeLeft)
         
-        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.swipedLeft))
+        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.swipedRight))
         swipeRight.direction = UISwipeGestureRecognizerDirection.right
         self.view.addGestureRecognizer(swipeRight)
         
@@ -40,12 +40,13 @@ class GoalsVC: UIViewController {
     }
     
     @IBAction func menuBtnPressed(_ sender: Any) {
-        UIView.animate(withDuration: 0.3) {
-            self.sideMenu.transform = CGAffineTransform(translationX: 0, y: 0)
-            self.updateConstraints()
-        }
+        updateConstraints()
         
         
+    }
+    
+    @objc func swipedRight() {
+        updateConstraints()
     }
     
     @objc func swipedLeft() {
@@ -67,14 +68,23 @@ class GoalsVC: UIViewController {
     func updateConstraints() {
         welcomeStack.isHidden = true
         if sideMenuOpen {
-            setUpSideMenuView(false)
-            sideMenuConstraint.constant = -300
+            self.sideMenuConstraint.constant = -300
+            UIView.animate(withDuration: 0.2, delay: 0, options: .curveEaseOut, animations: {
+                self.view.layoutIfNeeded()
+                self.setUpSideMenuView(false)
+                self.welcomeStack.isHidden = false
+            }, completion: nil)
             sideMenuOpen = false
         } else {
-            setUpSideMenuView(true)
-            sideMenuConstraint.constant = 0
+            self.sideMenuConstraint.constant = 0
+            UIView.animate(withDuration: 0.2, delay: 0, options: .curveEaseOut, animations: {
+                self.view.layoutIfNeeded()
+                self.setUpSideMenuView(true)
+                self.welcomeStack.isHidden = true
+            }, completion: nil)
             sideMenuOpen = true
         }
+        
     }
     
     

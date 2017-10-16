@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2A13F0A9F18724597A5A41D5 /* Pods_Intentions_alpha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7E991432044BBC95B39FB37 /* Pods_Intentions_alpha.framework */; };
+		FA2EE1371F943A9B0051B477 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA2EE1361F943A9B0051B477 /* GoogleService-Info.plist */; };
 		FAFA7E6C1F8AE92A008E1A78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA7E6B1F8AE92A008E1A78 /* AppDelegate.swift */; };
 		FAFA7E6E1F8AE92A008E1A78 /* GoalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA7E6D1F8AE92A008E1A78 /* GoalsVC.swift */; };
 		FAFA7E711F8AE92A008E1A78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFA7E6F1F8AE92A008E1A78 /* Main.storyboard */; };
@@ -17,7 +18,6 @@
 		FAFA7E871F8AEC7A008E1A78 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA7E861F8AEC7A008E1A78 /* LoginVC.swift */; };
 		FAFA7E891F8AECA8008E1A78 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA7E881F8AECA8008E1A78 /* RegisterVC.swift */; };
 		FAFA7E8B1F8B06D5008E1A78 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA7E8A1F8B06D5008E1A78 /* DataService.swift */; };
-		FAFA7E8F1F8B0AC4008E1A78 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAFA7E8E1F8B0AC4008E1A78 /* GoogleService-Info.plist */; };
 		FAFA7E911F8B15EC008E1A78 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA7E901F8B15EC008E1A78 /* AuthService.swift */; };
 		FAFA7E931F8B2AEE008E1A78 /* UIViewControllerEXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA7E921F8B2AEE008E1A78 /* UIViewControllerEXT.swift */; };
 		FAFA7E951F8B3019008E1A78 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA7E941F8B3019008E1A78 /* CustomButton.swift */; };
@@ -30,6 +30,7 @@
 		68411056AEA588FBF45762F6 /* Pods-Intentions-alpha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Intentions-alpha.release.xcconfig"; path = "Pods/Target Support Files/Pods-Intentions-alpha/Pods-Intentions-alpha.release.xcconfig"; sourceTree = "<group>"; };
 		CD30F4F89526878D7BC722C0 /* Pods-Intentions-alpha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Intentions-alpha.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Intentions-alpha/Pods-Intentions-alpha.debug.xcconfig"; sourceTree = "<group>"; };
 		F7E991432044BBC95B39FB37 /* Pods_Intentions_alpha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Intentions_alpha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA2EE1361F943A9B0051B477 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FAFA7E681F8AE92A008E1A78 /* Intentions-alpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Intentions-alpha.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAFA7E6B1F8AE92A008E1A78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAFA7E6D1F8AE92A008E1A78 /* GoalsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsVC.swift; sourceTree = "<group>"; };
@@ -41,7 +42,6 @@
 		FAFA7E881F8AECA8008E1A78 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		FAFA7E8A1F8B06D5008E1A78 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		FAFA7E8D1F8B0A90008E1A78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FAFA7E8E1F8B0AC4008E1A78 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FAFA7E901F8B15EC008E1A78 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		FAFA7E921F8B2AEE008E1A78 /* UIViewControllerEXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerEXT.swift; sourceTree = "<group>"; };
 		FAFA7E941F8B3019008E1A78 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
@@ -110,7 +110,7 @@
 				FAFA7E6F1F8AE92A008E1A78 /* Main.storyboard */,
 				FAFA7E721F8AE92A008E1A78 /* Assets.xcassets */,
 				FAFA7E741F8AE92A008E1A78 /* LaunchScreen.storyboard */,
-				FAFA7E8E1F8B0AC4008E1A78 /* GoogleService-Info.plist */,
+				FA2EE1361F943A9B0051B477 /* GoogleService-Info.plist */,
 				FAFA7E8D1F8B0A90008E1A78 /* Info.plist */,
 			);
 			path = "Intentions-alpha";
@@ -232,8 +232,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAFA7E761F8AE92A008E1A78 /* LaunchScreen.storyboard in Resources */,
-				FAFA7E8F1F8B0AC4008E1A78 /* GoogleService-Info.plist in Resources */,
 				FAFA7E731F8AE92A008E1A78 /* Assets.xcassets in Resources */,
+				FA2EE1371F943A9B0051B477 /* GoogleService-Info.plist in Resources */,
 				FAFA7E711F8AE92A008E1A78 /* Main.storyboard in Resources */,
 				FAFA7E991F8B3824008E1A78 /* CreateCategoryVC.xib in Resources */,
 			);
